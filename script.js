@@ -17,3 +17,75 @@ nightMode.addEventListener("click",()=>{
     nightMode.style.color="white";
     btnLight.style.color="black"
 })
+
+//project clicked
+
+let h1project = document.getElementById("h1project");
+let project = document.getElementById("project");
+
+
+h1project.addEventListener("click", (even)=>{
+    let target= even.target;
+  switch(target.id){
+    case "h1project":
+        project.innerHTML ="project";
+        break;
+        
+
+  }
+})
+
+let h1asignment = document.getElementById("h1asignment");
+let asignment = document.getElementById("asignment");
+
+h1asignment.addEventListener("click", (even)=>{
+    let target= even.target;
+  switch(target.id){
+    case "h1asignment":
+        asignment.innerHTML ="asignment";
+        break;
+        
+
+  }
+})
+let h1quiz = document.getElementById("h1quiz");
+let quiz = document.getElementById("quiz");
+
+h1quiz.addEventListener("click", (even)=>{
+    let target= even.target;
+  switch(target.id){
+    case "h1quiz":
+        quiz.innerHTML ="Quizzes";
+        break;
+        
+
+  }
+})
+let h1exrsis = document.getElementById("h1exrsis");
+let exrsis = document.getElementById("exrsis");
+
+h1exrsis.addEventListener("click", (even)=>{
+    let target= even.target;
+  switch(target.id){
+    case "h1exrsis":
+        exrsis.innerHTML ="Exercises";
+        break;
+        
+
+  }
+})
+
+let h1help = document.getElementById("h1help");
+let helpmen = document.getElementById("helpmen");
+
+h1help.addEventListener("click", (even)=>{
+    let target= even.target;
+  switch(target.id){
+    case "h1help":
+        helpmen.innerHTML ="Helpmen";
+        break;
+        
+
+  }
+})
+
