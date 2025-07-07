@@ -18,7 +18,7 @@
     
     <title>Life style </title>
 </head>
-<body class="bg-gray-800"> 
+<body class="bg-pink-200"> 
 
   
   
@@ -39,7 +39,7 @@
       <a class="text-white px-4 bg-[#262626] py-2 rounded-full hover:text-gray-400 transition-all" href="">Home</a>
       <a class="text-white hover:text-gray-400 transition" href="#skills">Skills </a>
       <a class="text-white hover:text-gray-400 transition" href="#about">About </a>
-      <a class="text-white hover:text-gray-400 transition" href="#">Security </a>
+      <a class="text-white hover:text-gray-400 transition" href="#signIn">sign In </a>
     </div>
     <!-- dark mode -->
       <div class=" md:flex  ml-[20px]   rounded-2xl  items-center justify-center  py-2 gap-3"><i id="nightMode" class="fa-solid fa-moon px-4 py-2 text-[50px] bg-gray-500 rounded-4xl text-black hover:text-gray-200   transition-all"></i> <i id="btnLight" class="fa-solid fa-lightbulb 
@@ -119,12 +119,14 @@
 
  <!-- logo section start -->
   <section>
-    <div class="grid grid-cols-4 md:grid-cols-4  w-full justify-around items-center mx-auto gap-8 py-[20px] px-[30px] md:px-[50px]">
+    <div class="grid grid-cols-5 md:grid-cols-5  w-full justify-around items-center mx-auto gap-8 py-[20px] px-[30px] md:px-[50px]">
       
     <div class="w-[100px] border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "><img class="rounded-full" src="/image/htlm5.jpg" alt=" google"></div>
     <div class=" w-[100px] border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "><img class="rounded-full" src="/image/css.png" alt=" google"></div>
     <div class=" w-[100px] border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "> <img class="rounded-full " src="/image/tailwindcss.webp" alt=" work"> </div>
     <div class="w-[100px] border-amber-100 rounded-xl border-[5px]  md:border-[15px] md:border- "><img class=" rounded-xl " src="/image/javascript.png" alt="logo"></div>
+  
+    <div class="w-[100px] border-amber-100 rounded-xl border-[5px]  md:border-[15px] md:border- "><img class=" rounded-xl " src="/image/reactjs-inner.svg" alt="logo"></div>
   
     </div>
   
@@ -216,9 +218,52 @@ I strongly believe that learning never stops. That’s why I try to learn someth
 
 
 
+<!-- sign in section -->
+
 
  
-  <!-- job section start -->
+ <div id="signIn" class="w-[80%] px-2.5 py-3 mx-auto  border rounded-2xl mt-[40px] bg-gray-400 " style="backdrop-filter: blur(10px);">
+  
+
+
+    <!-- man task start -->
+    <div class="w-[90%] mx-auto py-3 ">
+     <h1 class="font-mono text-center font-bold  text-2xl bg-green-500 px-2 py-2 rounded-2xl w-[200px] mx-auto">Sign In</h1>
+     <div>
+     <div class="grid gap-[30px] grid-cols-2 mx-auto mt-3 w-[80%]">
+        <input type="text" id="firsName" placeholder="First Name" class="bg-amber-50 outline-none border-none px-2 py-2 rounded-xl shadow-green-600 hover:shadow-xl transition-all">
+        <input type="text" id="lastName" placeholder="Last Name"   class="bg-amber-50 outline-none border-none px-2 py-2 rounded-xl  shadow-pink-600 hover:shadow-xl transition-all">
+     </div>
+     <div  class="grid gap-[30px] grid-cols-1 mx-auto mt-3 w-[80%]">
+        <input id="email" type="email" placeholder="Enter Your Valid Email" class="bg-gray-500  outline-none border-none px-2 py-2 rounded-xl w-full  shadow-pink-600 hover:shadow-xl transition-all">
+        <input id="consfermEmail" type="email" placeholder="Conferm Email"  class="bg-gray-500 outline-none border-none px-2 py-2 rounded-xl w-full  shadow-pink-600 hover:shadow-xl transition-all">
+     </div>
+     <div  class="  flex mx-auto mt-3 w-[80%]">
+        <input id="password" type="password" placeholder="Enter Your password"  class="bg-amber-50 outline-none border-none px-2 py-2 rounded-xl rounded-r-none w-full  inner-shadow transition-all hover:shadow-2xl shadow-amber-500">
+        <button id="eyeBtn" class="bg-gray-400 px-2.5 rounded-r-xl hover:bg-gray-300    shadow-pink-600 hover:shadow-xl transition-all"><i class="fa-solid fa-eye"></i></button>
+     </div>
+     <div  class="  flex mx-auto mt-3 w-[80%]">
+        <input id="consfermpassowrd" type="password" placeholder="Enter Your password"  class="bg-amber-50 outline-none border-none px-2 py-2 rounded-xl rounded-r-none w-full  shadow-pink-600 hover:shadow-xl transition-all">
+        <button id="confermEyeBtn" class="bg-gray-400 px-2.5 rounded-r-xl hover:bg-gray-300  shadow-pink-600 hover:shadow-xl transition-all"><i class="fa-solid fa-eye"></i></button>
+     </div>
+     <div class="flex justify-around mx-auto mt-5 w-[80%] ">
+        <div class="flex justify-center items-center gap-2 bg-green-300 md:px-3 md:py-2 px-1 py-1 rounded-xl "><i class="fa-brands fa-facebook "> </i> <p class="md:text-[16px] text-[8px]">Sign in With Facebook</p>  </div>
+    <div class="flex justify-center items-center gap-2 bg-green-300 px-3 py-2 rounded-xl "> <i class="fa-brands fa-google"></i>  <p class="md:text-[16px] text-[8px]">Sign in with Google</p></div>
+     </div>
+     <div class=" mx-auto text-center ">
+     <button id="signIn" class="text-center bg-green-600 px-4 py-2 rounded-xl w-[80%] hover:bg-green-400  mt-2.5  shadow-pink-300 hover:shadow-xl transition-all">Sign in</button></div>
+
+      
+     </div>
+    </div>
+
+    </div>
+
+    
+
+
+ 
+  <!-- skill section start -->
    <section>
     <div class="md:flex   w-[80%] mx-auto justify-around items-center gap-[20px] mb-5">
       <!-- job section left side start -->
@@ -405,6 +450,62 @@ nightMode.addEventListener("click",()=>{
       });
 
 
+
+      // sign in js
+
+
+  // from fill task code
+    let signIn = document.getElementById("signIn");
+    signIn.addEventListener("click",()=>{
+     const firsName = document.getElementById("firsName").value;
+     const lastName = document.getElementById("lastName").value;
+     const email = document.getElementById("email").value;
+     const consfermEmail = document.getElementById("consfermEmail").value;
+     const password = document.getElementById("password").value;
+     const consfermpassowrd = document.getElementById("consfermpassowrd").value;
+
+     if(!firsName || !lastName || !email || !consfermEmail || !password || !consfermpassowrd){
+      alert("Fill The Form Please")
+      return;
+     }
+      if(email !==consfermEmail){
+         alert("Email do not match ");
+      return;
+      }
+      if(password !==consfermpassowrd){
+         alert("passowrd don not macthing")
+         return;
+      }
+
+      alert("Welcome For Sign in, You are Succed")
+
+    })
+
+   // eye btn
+   let confermEyeBtn = document.getElementById("confermEyeBtn");
+   let eyeBtn = document.getElementById("eyeBtn");
+   let password = document.getElementById("password");
+   let consfermpassowrd = document.getElementById("consfermpassowrd");
+  //passord 
+    eyeBtn.addEventListener("click",()=>{
+      if(password.type==="password"){
+         password.type="text"
+      }
+      else{
+         password.type ="password"
+      }
+    })
+
+    
+    confermEyeBtn.addEventListener("click", ()=>{
+     if(consfermpassowrd.type ==="password"){
+      consfermpassowrd.type="text"
+     }
+     else{
+      consfermpassowrd.type ="password"
+     }
+
+    })
 
 
 
