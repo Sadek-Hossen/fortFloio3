@@ -18,17 +18,60 @@
     
     <title>Life style </title>
 </head>
-<body>
-        <div class="md:flex md:ml-[900px] ml-[20px] md:mt-2.5 bg-gray-500 w-[150px] rounded-2xl  items-center justify-center  py-2 "><i id="nightMode" class="fa-solid fa-moon px-3 text-[50px] text-black hover:text-gray-200   transition-all"></i> <i id="btnLight" class="fa-solid fa-lightbulb 
-         px-3 text-[50px] text-white/95 hover:text-gray-100/78 transition-all"></i></div>
+<body class="bg-gray-800"> 
 
+  
+  
+
+<header class="flex justify-between items-center w-[80%] mx-auto mt-[20px] relative py-[1
+0px]  bg-[#1C1C1C] px-[30px] rounded-full ">
+
+    <!--logo -->
+    <div><img class="w-[80px]" src="image/mylogo - Copy.png" alt="logo">
+    </div>
+    <!--mobile icon-->
+
+    <div class="text-white font-bold text-2xl block md:hidden  hover:text-3xl transition-all">
+      <i id="mobile-menu-button" class="fa-solid fa-bars"></i> </div>
+    <!-- meno  -->
+     <nav class="hidden  md:flex items-center md:gap-[20px]">
+        <div class="  space-x-4  flex justify-center items-center">
+      <a class="text-white px-4 bg-[#262626] py-2 rounded-full hover:text-gray-400 transition-all" href="">Home</a>
+      <a class="text-white hover:text-gray-400 transition" href="#skills">Skills </a>
+      <a class="text-white hover:text-gray-400 transition" href="#about">About </a>
+      <a class="text-white hover:text-gray-400 transition" href="#">Security </a>
+    </div>
+    <!-- dark mode -->
+      <div class=" md:flex  ml-[20px]   rounded-2xl  items-center justify-center  py-2 gap-3"><i id="nightMode" class="fa-solid fa-moon px-4 py-2 text-[50px] bg-gray-500 rounded-4xl text-black hover:text-gray-200   transition-all"></i> <i id="btnLight" class="fa-solid fa-lightbulb 
+         px-4 py-2 text-[50px]  bg-gray-500 rounded-4xl text-white/95 hover:text-gray-100/78 transition-all "></i></div>
+     </nav>
+  
+
+</header>
+      
+
+<div id="mobile-menu" class="fixed inset-0  bg-gray-800/78 flex justify-center items-center hidden">
+<div class="absolute top-4 right-4 ">
+  <i id="close-menu-button" class="fa-solid fa-x text-white text-2xl"></i>
+</div>
+
+  <div class="  space-y-4 flex-col flex justify-center items-center ">
+      <a class="text-white px-4 bg-[#262626] py-2 rounded-full hover:text-gray-400 transition-all" href="/index.html">Home</a>
+      <a class="text-white hover:text-gray-400 transition" href="#skills">skills </a>
+      <a class="text-white hover:text-gray-400 transition" href="#about">About </a>
+      <a class="text-white hover:text-gray-400 transition" href="#">Security </a>
+        
+</div>
+</div>
+
+        
 
 <!-- hero section start -->
  <section  class="  w-[100%] md:px-20 ">
   <div id="main-hero" class="md:flex w-[80%] justify-center gap-[100px] gap-y-2 items-center mx-auto  py-[50px]">
     <div class="">
       <h1 class=" text-6xl text-green-500 font-bold font-mono ">Hi, </h1>
-       <h1 class="font-mono font-bold text-6xl pl-[50px]">I'm</h1> <p class="text-3xl text-blue-400/60">Web Developer</p>
+       <h1 class="font-mono font-bold text-6xl pl-[50px] text-blue-600">I'm</h1> <p class="text-3xl text-blue-400/60">Web Developer</p>
         <span class="font-bold text-8xl  text-green-500 text-shadow-cyan-700 font-mono">Sadek Ho<span class="text-blue-600">ss</span>en</span>
         <h1 class="font-semibold   pl-[140px]  md:text-2xl text-[13px] text-gray-400">Nick Name: Emon</h1>
         <h1 class="font-semibold text-2xl mt-2 md:text-[50px] underline text-red-500">Website Support</h1>
@@ -57,7 +100,7 @@
                     </div>
                       </div>
                     <div id="btn " class="flex md:gap-[50px] mt-[20px] gap-[20px] ">
-                      <a href="/sign.html"> <button  class="text-2xl bg-amber-700 px-3 rounded-full text-center font-bold py-2 pb-3  hover:scale-120 hover:bg-green-400 transition-all  " style="background-color: greenyellow ; color: red; font-family:monospace;
+                      <a type="module" href="/sign.html"> <button type="module" class="text-2xl bg-amber-700 px-3 rounded-full text-center font-bold py-2 pb-3  hover:scale-120 hover:bg-green-400 transition-all  " style="background-color: greenyellow ; color: red; font-family:monospace;
                        " onclick="window.location.href='sign.html'" >sign up</button></a>
                       <button class="text-2xl bg-amber-700 px-3 rounded-full text-center font-bold py-2 pb-3  hover:scale-120 hover:bg-green-400 transition-all  " style="background-color: greenyellow ; color: red; font-family:monospace;
                        ">Learn more</button>
@@ -65,8 +108,8 @@
       
     </div>
 
-    <div id="img" class="md:pl-2 mt-3">
-      <img class="rounded-full border-red-500 border-[20px] " src="/image/Me.jpg" alt="">
+    <div id="img" class="md:pl-2 mt-3 md:mt-0">
+      <img class="rounded-full border-red-500 md:w-[300px] md:ml-[100px] border-[20px] " src="/image/Me.jpg" alt="">
     </div>
   </div>
   
@@ -78,10 +121,10 @@
   <section>
     <div class="grid grid-cols-4 md:grid-cols-4  w-full justify-around items-center mx-auto gap-8 py-[20px] px-[30px] md:px-[50px]">
       
-    <div class=" border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "><img class="rounded-full" src="/image/htlm5.jpg" alt=" google"></div>
-    <div class="border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "><img class="rounded-full" src="/image/css.png" alt=" google"></div>
-    <div class="border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "> <img class="rounded-full " src="/image/tailwindcss.webp" alt=" work"> </div>
-    <div class="border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "><img class=" rounded-full " src="/image/javascript.png" alt="logo"></div>
+    <div class="w-[100px] border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "><img class="rounded-full" src="/image/htlm5.jpg" alt=" google"></div>
+    <div class=" w-[100px] border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "><img class="rounded-full" src="/image/css.png" alt=" google"></div>
+    <div class=" w-[100px] border-amber-100 rounded-full border-[5px]  md:border-[15px] md:border- "> <img class="rounded-full " src="/image/tailwindcss.webp" alt=" work"> </div>
+    <div class="w-[100px] border-amber-100 rounded-xl border-[5px]  md:border-[15px] md:border- "><img class=" rounded-xl " src="/image/javascript.png" alt="logo"></div>
   
     </div>
   
@@ -90,7 +133,7 @@
 
 <!-- about section -->
 
-<section class="w-[90%] grid md:grid-cols-2 grid-cols-1 mx-auto py-[50px] justify-between gap-[100px] rounded-4xl items-center bg-[#FFFFFF] text-black px-[50px] " style="font-family: 'Pacifico', cursive;">
+<section id="about" class="w-[90%] grid md:grid-cols-2 grid-cols-1 mx-auto py-[50px] justify-between gap-[100px] rounded-4xl items-center bg-[#FFFFFF] text-black px-[50px] " style="font-family:  'Caveat', cursive;">
   <div class="grid-cols-1">
     <h1 class="text-4xl font-bold pb-3">About me</h1>
     <p>My name is <span class="text-xl font-bold">Sadek Hossen</span> . I am a passionate and hardworking young web developer who is currently enrolled in a paid Full-Stack Web Development course at <a class="text-blue-600 font-bold " href="https://www.hablu-programmer.com/dashboard/jfsd/2/module-7-javascript-problem-solving-assignment-jfsd-1/post/javascript-problem-solving-requirement"> Hablo Programming Academy</a>. My goal is to become a skilled web developer and build a successful career in the tech industry.
@@ -173,42 +216,54 @@ I strongly believe that learning never stops. That’s why I try to learn someth
    <section>
     <div class="md:flex   w-[80%] mx-auto justify-around items-center gap-[20px] mb-5">
       <!-- job section left side start -->
-      <div  class=" py-2.5 bg-[#FFFFFF]  text-black  drop-shadow -amber-50 rounded-xl px-[50px] hover:scale-105 transition-all duration-300 mt-[60px]">
+      <div id="skills"  class=" py-2.5 bg-[#FFFFFF]  text-black  drop-shadow -amber-50 rounded-xl px-[50px] hover:scale-105 transition-all duration-300 mt-[60px]">
         <p class="font-bold py-[10px] text-black">My skills </p>
         <hr  class="text-[#F9CCC7]">
     
 
           
-          <div class="w-full py-[80px]">
+          <div class="w-full py-[80px] grid gap-y-3 font-bold  font-mono" style="font-family: 'Caveat', cursive;">
 
             <div class="  flex justify-around items-center gap-3" >
               <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
-              <p class="text-[14px] w-[200px]">Create Webpage</p>
+              <p class="text-[14px] w-[200px]">HTML</p>
             </div>
             <div class="flex justify-around items-center gap-3" >
               <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
-              <p class="text-[14px] w-[200px]">UI/UX Design</p>
+              <p class="text-[14px] w-[200px]">CSS</p>
             </div>
             <div class="flex justify-around items-center gap-3" >
               <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
-              <p class="text-[14px] w-[200px]">Build login Form</p>
+              <p class="text-[14px] w-[200px]">Tailwind CSS</p>
             </div>
             <div class="flex justify-around items-center gap-3" >
               <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
-              <p class="text-[14px] w-[200px]">Create Beautyfoll Webpage</p>
+              <p class="text-[14px] w-[200px]">Javascript</p>
             </div>
             <div class="flex justify-around items-center gap-3" >
               <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
-              <p class="text-[14px] w-[200px]">Database administrator</p>
+              <p class="text-[14px] w-[200px]">Json</p>
             </div>
-            <!-- <div class="flex justify-around items-center gap-3" >
+            <div class="flex justify-around items-center gap-3" >
               <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
-              <p class="text-[14px] w-[200px]">Database administrator</p>
-            </div> -->
-          
-          
-          
-            
+              <p class="text-[14px] w-[200px]">React JS</p>
+            </div>
+            <div class="flex justify-around items-center gap-3" >
+              <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
+              <p class="text-[14px] w-[200px]">Responsive Design (Mobile Friendly Websites)</p>
+            </div>
+            <div class="flex justify-around items-center gap-3" >
+              <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
+              <p class="text-[14px] w-[200px]">Git & GitHub (Version Control System)</p>
+            </div>
+       <div class="flex justify-around items-center gap-3" >
+              <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
+              <p class="text-[14px] w-[200px]">Portfolio Website Design</p>
+            </div> 
+       <div class="flex justify-around items-center gap-3" >
+              <img class="w-[30px]" src="/image/Checkmark.png" alt="arrow">
+              <p class="text-[14px] w-[200px]">Problem Solving</p>
+            </div> 
           
           </div>
 
@@ -297,15 +352,8 @@ E14 5AB</p>
     </footer>
 
  <script type="module" src="script.js">
-  const htmlTag = document.getElementById("htmlTag");
-  document.getElementById("darkBtn").addEventListener("click", function () {
-    htmlTag.classList.toggle("dark"); 
-    console.log("hello world");
-  });
-</script> 
 
-
-    
+    </script>
 
 </body>
 </html>   
