@@ -357,7 +357,56 @@ E14 5AB</p>
       </div>
     </footer>
 
- <script type="module" src="script.js">
+
+    <!-- script file -->
+ <script type="module">
+
+
+
+let btnLight = document.getElementById("btnLight")
+btnLight.addEventListener("click",()=>{
+
+    let body = document.querySelector("body")
+    body.style.backgroundColor="white";
+    body.style.color="black";
+    btnLight.style.color="white";
+    nightMode.style.color = "black"
+});
+
+let nightMode = document.getElementById("nightMode");
+
+nightMode.addEventListener("click",()=>{
+    let body = document.querySelector("body");
+    body.style.backgroundColor ="black";
+    body.style.color = "white"
+    nightMode.style.color="white";
+    btnLight.style.color="black"
+})
+
+
+  // <!-- Mobile Menu JavaScript -->
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const closeMenuButton = document.getElementById("close-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.classList.add("flex");
+          document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+        });
+
+        closeMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("flex");
+          mobileMenu.classList.add("hidden");
+          document.body.style.overflow = ""; // Re-enable scrolling
+        });
+      });
+
+
+
+
 
     </script>
 
